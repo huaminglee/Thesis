@@ -1,0 +1,191 @@
+﻿<error errorId="0ef788cc-d895-4bd5-8272-11ccc748a71c" host="TRDP5087" type="System.Web.HttpException" message="This is an invalid webresource request." source="System.Web" detail="System.Web.HttpException (0x80004005): This is an invalid webresource request.&#xD;&#xA;   at System.Web.Handlers.AssemblyResourceLoader.System.Web.IHttpHandler.ProcessRequest(HttpContext context)&#xD;&#xA;   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()&#xD;&#xA;   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean&amp; completedSynchronously)" user="axiom" time="2012-08-05T17:27:46.7259535Z" statusCode="404">
+  <serverVariables>
+    <item name="ALL_HTTP">
+      <value string="HTTP_CONNECTION:keep-alive&#xD;&#xA;HTTP_ACCEPT:text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8&#xD;&#xA;HTTP_ACCEPT_ENCODING:gzip, deflate&#xD;&#xA;HTTP_ACCEPT_LANGUAGE:tr-tr,tr;q=0.8,en-us;q=0.5,en;q=0.3&#xD;&#xA;HTTP_COOKIE:Theme=3; Lan=en-US; cookieUserName=qreditsadmin; cookieLanguage=nl-NL; __utma=111872281.394981596.1335522939.1335522939.1335522939.1; __utmz=111872281.1335522939.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); ASP.NET_SessionId=mtg0cd1juy4i5hysaqbo1nje; .ASPXAUTH=AA821722AC27CB7EF457A44875FA9C0F04B6B649ABE872230579D0A32EE80F60D942ABBF3A7DF0B68B5A16BBC64481DBBE428D42E4BAE0F7C38A08F65DF228D0362D73DB0DB0BCF2BA50BD36F073FE873999DFDBE42F63033619B179B3842980CB05EBFDA6971182A1C96CC6B03D00ABE769D7360C6174E452FBAEC6A35F672D&#xD;&#xA;HTTP_HOST:localhost:62128&#xD;&#xA;HTTP_REFERER:http://localhost:62128/extjs/resources/css/xtheme-slate-embedded-css/ext.axd?v=42036&#xD;&#xA;HTTP_USER_AGENT:Mozilla/5.0 (Windows NT 6.1; rv:14.0) Gecko/20100101 Firefox/14.0.1&#xD;&#xA;" />
+    </item>
+    <item name="ALL_RAW">
+      <value string="Connection: keep-alive&#xD;&#xA;Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8&#xD;&#xA;Accept-Encoding: gzip, deflate&#xD;&#xA;Accept-Language: tr-tr,tr;q=0.8,en-us;q=0.5,en;q=0.3&#xD;&#xA;Cookie: Theme=3; Lan=en-US; cookieUserName=qreditsadmin; cookieLanguage=nl-NL; __utma=111872281.394981596.1335522939.1335522939.1335522939.1; __utmz=111872281.1335522939.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); ASP.NET_SessionId=mtg0cd1juy4i5hysaqbo1nje; .ASPXAUTH=AA821722AC27CB7EF457A44875FA9C0F04B6B649ABE872230579D0A32EE80F60D942ABBF3A7DF0B68B5A16BBC64481DBBE428D42E4BAE0F7C38A08F65DF228D0362D73DB0DB0BCF2BA50BD36F073FE873999DFDBE42F63033619B179B3842980CB05EBFDA6971182A1C96CC6B03D00ABE769D7360C6174E452FBAEC6A35F672D&#xD;&#xA;Host: localhost:62128&#xD;&#xA;Referer: http://localhost:62128/extjs/resources/css/xtheme-slate-embedded-css/ext.axd?v=42036&#xD;&#xA;User-Agent: Mozilla/5.0 (Windows NT 6.1; rv:14.0) Gecko/20100101 Firefox/14.0.1&#xD;&#xA;" />
+    </item>
+    <item name="APPL_MD_PATH">
+      <value string="" />
+    </item>
+    <item name="APPL_PHYSICAL_PATH">
+      <value string="C:\Users\emre\Documents\Visual Studio 2010\Projects\AxiomRelease3\Axiom2_Release\Axiom\" />
+    </item>
+    <item name="AUTH_TYPE">
+      <value string="Forms" />
+    </item>
+    <item name="AUTH_USER">
+      <value string="axiom" />
+    </item>
+    <item name="AUTH_PASSWORD">
+      <value string="" />
+    </item>
+    <item name="LOGON_USER">
+      <value string="TRIODORTR\emre" />
+    </item>
+    <item name="REMOTE_USER">
+      <value string="axiom" />
+    </item>
+    <item name="CERT_COOKIE">
+      <value string="" />
+    </item>
+    <item name="CERT_FLAGS">
+      <value string="" />
+    </item>
+    <item name="CERT_ISSUER">
+      <value string="" />
+    </item>
+    <item name="CERT_KEYSIZE">
+      <value string="" />
+    </item>
+    <item name="CERT_SECRETKEYSIZE">
+      <value string="" />
+    </item>
+    <item name="CERT_SERIALNUMBER">
+      <value string="" />
+    </item>
+    <item name="CERT_SERVER_ISSUER">
+      <value string="" />
+    </item>
+    <item name="CERT_SERVER_SUBJECT">
+      <value string="" />
+    </item>
+    <item name="CERT_SUBJECT">
+      <value string="" />
+    </item>
+    <item name="CONTENT_LENGTH">
+      <value string="0" />
+    </item>
+    <item name="CONTENT_TYPE">
+      <value string="" />
+    </item>
+    <item name="GATEWAY_INTERFACE">
+      <value string="" />
+    </item>
+    <item name="HTTPS">
+      <value string="" />
+    </item>
+    <item name="HTTPS_KEYSIZE">
+      <value string="" />
+    </item>
+    <item name="HTTPS_SECRETKEYSIZE">
+      <value string="" />
+    </item>
+    <item name="HTTPS_SERVER_ISSUER">
+      <value string="" />
+    </item>
+    <item name="HTTPS_SERVER_SUBJECT">
+      <value string="" />
+    </item>
+    <item name="INSTANCE_ID">
+      <value string="" />
+    </item>
+    <item name="INSTANCE_META_PATH">
+      <value string="" />
+    </item>
+    <item name="LOCAL_ADDR">
+      <value string="::1" />
+    </item>
+    <item name="PATH_INFO">
+      <value string="/WebResource.axd" />
+    </item>
+    <item name="PATH_TRANSLATED">
+      <value string="C:\Users\emre\Documents\Visual Studio 2010\Projects\AxiomRelease3\Axiom2_Release\Axiom\WebResource.axd" />
+    </item>
+    <item name="QUERY_STRING">
+      <value string="d=o9FXHfPfsFBMeuscbcv0gpLj1AEeDoG3XC0widF17ibW__ypW9vT3Xd5OR5bvXXazfDWamtXLJKMIEiqbcFSdFb3H4A01BX4dOCIDln6yzBrlNXNUMs959aPd2I7lElDoVLQQ-DHaSK5etmWD8x7yLvs6Kd4XUwjlz_G2yrgdLAobPDgrIt0X82L9WUrmcZo0&amp;t=634600171231641489" />
+    </item>
+    <item name="REMOTE_ADDR">
+      <value string="::1" />
+    </item>
+    <item name="REMOTE_HOST">
+      <value string="::1" />
+    </item>
+    <item name="REMOTE_PORT">
+      <value string="" />
+    </item>
+    <item name="REQUEST_METHOD">
+      <value string="GET" />
+    </item>
+    <item name="SCRIPT_NAME">
+      <value string="/WebResource.axd" />
+    </item>
+    <item name="SERVER_NAME">
+      <value string="localhost" />
+    </item>
+    <item name="SERVER_PORT">
+      <value string="62128" />
+    </item>
+    <item name="SERVER_PORT_SECURE">
+      <value string="0" />
+    </item>
+    <item name="SERVER_PROTOCOL">
+      <value string="HTTP/1.1" />
+    </item>
+    <item name="SERVER_SOFTWARE">
+      <value string="" />
+    </item>
+    <item name="URL">
+      <value string="/WebResource.axd" />
+    </item>
+    <item name="HTTP_CONNECTION">
+      <value string="keep-alive" />
+    </item>
+    <item name="HTTP_ACCEPT">
+      <value string="text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8" />
+    </item>
+    <item name="HTTP_ACCEPT_ENCODING">
+      <value string="gzip, deflate" />
+    </item>
+    <item name="HTTP_ACCEPT_LANGUAGE">
+      <value string="tr-tr,tr;q=0.8,en-us;q=0.5,en;q=0.3" />
+    </item>
+    <item name="HTTP_COOKIE">
+      <value string="Theme=3; Lan=en-US; cookieUserName=qreditsadmin; cookieLanguage=nl-NL; __utma=111872281.394981596.1335522939.1335522939.1335522939.1; __utmz=111872281.1335522939.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); ASP.NET_SessionId=mtg0cd1juy4i5hysaqbo1nje; .ASPXAUTH=AA821722AC27CB7EF457A44875FA9C0F04B6B649ABE872230579D0A32EE80F60D942ABBF3A7DF0B68B5A16BBC64481DBBE428D42E4BAE0F7C38A08F65DF228D0362D73DB0DB0BCF2BA50BD36F073FE873999DFDBE42F63033619B179B3842980CB05EBFDA6971182A1C96CC6B03D00ABE769D7360C6174E452FBAEC6A35F672D" />
+    </item>
+    <item name="HTTP_HOST">
+      <value string="localhost:62128" />
+    </item>
+    <item name="HTTP_REFERER">
+      <value string="http://localhost:62128/extjs/resources/css/xtheme-slate-embedded-css/ext.axd?v=42036" />
+    </item>
+    <item name="HTTP_USER_AGENT">
+      <value string="Mozilla/5.0 (Windows NT 6.1; rv:14.0) Gecko/20100101 Firefox/14.0.1" />
+    </item>
+  </serverVariables>
+  <queryString>
+    <item name="d">
+      <value string="o9FXHfPfsFBMeuscbcv0gpLj1AEeDoG3XC0widF17ibW__ypW9vT3Xd5OR5bvXXazfDWamtXLJKMIEiqbcFSdFb3H4A01BX4dOCIDln6yzBrlNXNUMs959aPd2I7lElDoVLQQ-DHaSK5etmWD8x7yLvs6Kd4XUwjlz_G2yrgdLAobPDgrIt0X82L9WUrmcZo0" />
+    </item>
+    <item name="t">
+      <value string="634600171231641489" />
+    </item>
+  </queryString>
+  <cookies>
+    <item name="Theme">
+      <value string="3" />
+    </item>
+    <item name="Lan">
+      <value string="en-US" />
+    </item>
+    <item name="cookieUserName">
+      <value string="qreditsadmin" />
+    </item>
+    <item name="cookieLanguage">
+      <value string="nl-NL" />
+    </item>
+    <item name="__utma">
+      <value string="111872281.394981596.1335522939.1335522939.1335522939.1" />
+    </item>
+    <item name="__utmz">
+      <value string="111872281.1335522939.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)" />
+    </item>
+    <item name="ASP.NET_SessionId">
+      <value string="mtg0cd1juy4i5hysaqbo1nje" />
+    </item>
+    <item name=".ASPXAUTH">
+      <value string="AA821722AC27CB7EF457A44875FA9C0F04B6B649ABE872230579D0A32EE80F60D942ABBF3A7DF0B68B5A16BBC64481DBBE428D42E4BAE0F7C38A08F65DF228D0362D73DB0DB0BCF2BA50BD36F073FE873999DFDBE42F63033619B179B3842980CB05EBFDA6971182A1C96CC6B03D00ABE769D7360C6174E452FBAEC6A35F672D" />
+    </item>
+  </cookies>
+</error>

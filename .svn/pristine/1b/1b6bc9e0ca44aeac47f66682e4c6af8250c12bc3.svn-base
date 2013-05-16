@@ -1,0 +1,25 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Web.Mvc;
+using Activity;
+using Axiom.Common.Helpers;
+using Axiom.Common.ViewModels;
+using Axiom.Controllers;
+using Axiom.Lib.ActionResults;
+using Axiom.Lib.Attributes;
+using Axiom.Lib.Controllers;
+using Axiom.Lib.Extensions;
+
+namespace Axiom.Areas.Activity.Controllers
+{
+    [ModuleAuthorize]
+    public class ActivityController : BaseScenarios<ActivityViewModel, IActivityRepository>
+    {
+        public ActivityController(IActivityRepository repository) : base(repository, "Name", "ActivityID")
+        {
+     
+        }
+    }
+}

@@ -1,0 +1,32 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Web.Mvc;
+using Axiom.Common.Extensions;
+using Axiom.Common.ViewModels;
+using Axiom.Lib.ActionResults;
+using Axiom.Lib.Controllers;
+using Crm;
+
+namespace Axiom.Areas.Crm.Controllers
+{
+    public class RoofController : AxiomBaseController<IRoofRepository>
+    {
+        public RoofController(IRoofRepository repository): base(repository)
+        {
+
+        }
+
+        [HttpPost]
+        public ActionResult GetByFilter(GridPanelViewModel model, int addressID)
+        {
+            model.AddFilterBase("AddressID", addressID);
+
+            int totalCount;
+            var data = repository.GetByFilter(model, out totalCount);
+            return new GridPanelResult(data, totalCount, model);
+        }
+
+    }
+}

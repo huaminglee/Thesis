@@ -1,0 +1,64 @@
+body {
+    font : normal 12px tahoma, arial, verdana;
+}
+
+.white-menu .x-menu {
+    background : white !important;
+}
+
+.x-window-mc {
+    background-color : #F4F4F4 !important;
+}
+
+.title-label{
+  color:black;
+}
+
+.x-theme-slate .title-label{
+  color:white;
+}
+
+.search-item
+{
+    font: normal 11px tahoma, arial, helvetica, sans-serif;
+    padding: 3px 10px 3px 10px;
+    border: 1px solid #fff;
+    border-bottom: 1px solid #eeeeee;
+    white-space: normal;
+    color: #555;
+}
+
+.search-item h3
+{
+    display: inline;
+    font-weight: normal;
+    color: #0066CB;
+}
+
+.right-box
+{
+    margin-left: 10px;    
+}
+
+.formpanel-item
+{
+    padding:6px 6px 0px 12px;    
+}
+
+.loading-icon
+{
+    background-image:url(/extjs/resources/images/default/grid/loading-gif/ext.axd);    
+}
+
+.multiColumns-list {
+    width : 298px;
+    font  : 11px tahoma,arial,helvetica,sans-serif;
+}
+        
+.multiColumns-list th {
+    font-weight : bold;
+}
+        
+.multiColumns-list td, .multiColumns-list th {
+    padding : 3px;
+}

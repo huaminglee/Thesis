@@ -1,0 +1,177 @@
+﻿<error errorId="59388b67-bf52-4289-ac66-36e4af2d0db1" host="TRDP5087" type="System.Web.HttpException" message="File does not exist." source="System.Web" detail="System.Web.HttpException (0x80004005): File does not exist.&#xD;&#xA;   at System.Web.StaticFileHandler.GetFileInfo(String virtualPathWithPathInfo, String physicalPath, HttpResponse response)&#xD;&#xA;   at System.Web.StaticFileHandler.ProcessRequestInternal(HttpContext context, String overrideVirtualPath)&#xD;&#xA;   at System.Web.DefaultHttpHandler.BeginProcessRequest(HttpContext context, AsyncCallback callback, Object state)&#xD;&#xA;   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()&#xD;&#xA;   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean&amp; completedSynchronously)" user="axiom" time="2011-12-20T20:40:59.1224789Z" statusCode="404">
+  <serverVariables>
+    <item name="ALL_HTTP">
+      <value string="HTTP_CONNECTION:Keep-Alive&#xD;&#xA;HTTP_ACCEPT:*/*&#xD;&#xA;HTTP_ACCEPT_ENCODING:gzip, deflate&#xD;&#xA;HTTP_COOKIE:HelpWinWidth=200; HelpWinState=true; Theme=3; Lan=en-US; cookieUserName=qreditsadmin; cookieLanguage=nl-NL; ASP.NET_SessionId=z3wxrwbcvg3omkbfi1wuhgau; .ASPXAUTH=9542073E7BE08632E54B69D02424FABEE3D3F1B18B83B55A46B32303C644388EF6BD1BCAB3CA5D0D96DB2D87EB60E10AE04B1F1205199D87FFDE8287FD5CB688BDB6D1E59C9EABFEFC47B03AE1D8C1EE6F0217F556DA0834B5B3C45CD3E9F8DDADFB39FA296FA544755FFD46322FD23E8D96A9699D7ADC08089DA2C9F15F906B3FC6377C47AC553138BE691A473BFC3D&#xD;&#xA;HTTP_HOST:localhost:62128&#xD;&#xA;HTTP_USER_AGENT:Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1; Trident/4.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; InfoPath.3; .NET4.0C; .NET4.0E; Tablet PC 2.0)&#xD;&#xA;" />
+    </item>
+    <item name="ALL_RAW">
+      <value string="Connection: Keep-Alive&#xD;&#xA;Accept: */*&#xD;&#xA;Accept-Encoding: gzip, deflate&#xD;&#xA;Cookie: HelpWinWidth=200; HelpWinState=true; Theme=3; Lan=en-US; cookieUserName=qreditsadmin; cookieLanguage=nl-NL; ASP.NET_SessionId=z3wxrwbcvg3omkbfi1wuhgau; .ASPXAUTH=9542073E7BE08632E54B69D02424FABEE3D3F1B18B83B55A46B32303C644388EF6BD1BCAB3CA5D0D96DB2D87EB60E10AE04B1F1205199D87FFDE8287FD5CB688BDB6D1E59C9EABFEFC47B03AE1D8C1EE6F0217F556DA0834B5B3C45CD3E9F8DDADFB39FA296FA544755FFD46322FD23E8D96A9699D7ADC08089DA2C9F15F906B3FC6377C47AC553138BE691A473BFC3D&#xD;&#xA;Host: localhost:62128&#xD;&#xA;User-Agent: Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1; Trident/4.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; InfoPath.3; .NET4.0C; .NET4.0E; Tablet PC 2.0)&#xD;&#xA;" />
+    </item>
+    <item name="APPL_MD_PATH">
+      <value string="" />
+    </item>
+    <item name="APPL_PHYSICAL_PATH">
+      <value string="C:\Users\emre\Documents\Visual Studio 2010\Projects\AxiomRelease3\Axiom2_Release\Axiom\" />
+    </item>
+    <item name="AUTH_TYPE">
+      <value string="Forms" />
+    </item>
+    <item name="AUTH_USER">
+      <value string="axiom" />
+    </item>
+    <item name="AUTH_PASSWORD">
+      <value string="" />
+    </item>
+    <item name="LOGON_USER">
+      <value string="TRIODORTR\emre" />
+    </item>
+    <item name="REMOTE_USER">
+      <value string="axiom" />
+    </item>
+    <item name="CERT_COOKIE">
+      <value string="" />
+    </item>
+    <item name="CERT_FLAGS">
+      <value string="" />
+    </item>
+    <item name="CERT_ISSUER">
+      <value string="" />
+    </item>
+    <item name="CERT_KEYSIZE">
+      <value string="" />
+    </item>
+    <item name="CERT_SECRETKEYSIZE">
+      <value string="" />
+    </item>
+    <item name="CERT_SERIALNUMBER">
+      <value string="" />
+    </item>
+    <item name="CERT_SERVER_ISSUER">
+      <value string="" />
+    </item>
+    <item name="CERT_SERVER_SUBJECT">
+      <value string="" />
+    </item>
+    <item name="CERT_SUBJECT">
+      <value string="" />
+    </item>
+    <item name="CONTENT_LENGTH">
+      <value string="0" />
+    </item>
+    <item name="CONTENT_TYPE">
+      <value string="" />
+    </item>
+    <item name="GATEWAY_INTERFACE">
+      <value string="" />
+    </item>
+    <item name="HTTPS">
+      <value string="" />
+    </item>
+    <item name="HTTPS_KEYSIZE">
+      <value string="" />
+    </item>
+    <item name="HTTPS_SECRETKEYSIZE">
+      <value string="" />
+    </item>
+    <item name="HTTPS_SERVER_ISSUER">
+      <value string="" />
+    </item>
+    <item name="HTTPS_SERVER_SUBJECT">
+      <value string="" />
+    </item>
+    <item name="INSTANCE_ID">
+      <value string="" />
+    </item>
+    <item name="INSTANCE_META_PATH">
+      <value string="" />
+    </item>
+    <item name="LOCAL_ADDR">
+      <value string="::1" />
+    </item>
+    <item name="PATH_INFO">
+      <value string="/favicon.ico" />
+    </item>
+    <item name="PATH_TRANSLATED">
+      <value string="C:\Users\emre\Documents\Visual Studio 2010\Projects\AxiomRelease3\Axiom2_Release\Axiom\favicon.ico" />
+    </item>
+    <item name="QUERY_STRING">
+      <value string="" />
+    </item>
+    <item name="REMOTE_ADDR">
+      <value string="::1" />
+    </item>
+    <item name="REMOTE_HOST">
+      <value string="::1" />
+    </item>
+    <item name="REMOTE_PORT">
+      <value string="" />
+    </item>
+    <item name="REQUEST_METHOD">
+      <value string="GET" />
+    </item>
+    <item name="SCRIPT_NAME">
+      <value string="/favicon.ico" />
+    </item>
+    <item name="SERVER_NAME">
+      <value string="localhost" />
+    </item>
+    <item name="SERVER_PORT">
+      <value string="62128" />
+    </item>
+    <item name="SERVER_PORT_SECURE">
+      <value string="0" />
+    </item>
+    <item name="SERVER_PROTOCOL">
+      <value string="HTTP/1.1" />
+    </item>
+    <item name="SERVER_SOFTWARE">
+      <value string="" />
+    </item>
+    <item name="URL">
+      <value string="/favicon.ico" />
+    </item>
+    <item name="HTTP_CONNECTION">
+      <value string="Keep-Alive" />
+    </item>
+    <item name="HTTP_ACCEPT">
+      <value string="*/*" />
+    </item>
+    <item name="HTTP_ACCEPT_ENCODING">
+      <value string="gzip, deflate" />
+    </item>
+    <item name="HTTP_COOKIE">
+      <value string="HelpWinWidth=200; HelpWinState=true; Theme=3; Lan=en-US; cookieUserName=qreditsadmin; cookieLanguage=nl-NL; ASP.NET_SessionId=z3wxrwbcvg3omkbfi1wuhgau; .ASPXAUTH=9542073E7BE08632E54B69D02424FABEE3D3F1B18B83B55A46B32303C644388EF6BD1BCAB3CA5D0D96DB2D87EB60E10AE04B1F1205199D87FFDE8287FD5CB688BDB6D1E59C9EABFEFC47B03AE1D8C1EE6F0217F556DA0834B5B3C45CD3E9F8DDADFB39FA296FA544755FFD46322FD23E8D96A9699D7ADC08089DA2C9F15F906B3FC6377C47AC553138BE691A473BFC3D" />
+    </item>
+    <item name="HTTP_HOST">
+      <value string="localhost:62128" />
+    </item>
+    <item name="HTTP_USER_AGENT">
+      <value string="Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1; Trident/4.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; InfoPath.3; .NET4.0C; .NET4.0E; Tablet PC 2.0)" />
+    </item>
+  </serverVariables>
+  <cookies>
+    <item name="HelpWinWidth">
+      <value string="200" />
+    </item>
+    <item name="HelpWinState">
+      <value string="true" />
+    </item>
+    <item name="Theme">
+      <value string="3" />
+    </item>
+    <item name="Lan">
+      <value string="en-US" />
+    </item>
+    <item name="cookieUserName">
+      <value string="qreditsadmin" />
+    </item>
+    <item name="cookieLanguage">
+      <value string="nl-NL" />
+    </item>
+    <item name="ASP.NET_SessionId">
+      <value string="z3wxrwbcvg3omkbfi1wuhgau" />
+    </item>
+    <item name=".ASPXAUTH">
+      <value string="9542073E7BE08632E54B69D02424FABEE3D3F1B18B83B55A46B32303C644388EF6BD1BCAB3CA5D0D96DB2D87EB60E10AE04B1F1205199D87FFDE8287FD5CB688BDB6D1E59C9EABFEFC47B03AE1D8C1EE6F0217F556DA0834B5B3C45CD3E9F8DDADFB39FA296FA544755FFD46322FD23E8D96A9699D7ADC08089DA2C9F15F906B3FC6377C47AC553138BE691A473BFC3D" />
+    </item>
+  </cookies>
+</error>

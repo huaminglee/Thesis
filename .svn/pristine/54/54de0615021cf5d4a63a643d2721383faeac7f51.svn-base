@@ -1,0 +1,16 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Web.Mvc;
+using Axiom.Lib.Attributes;
+
+namespace Axiom.Lib.Controllers
+{
+    [HandleError]
+    [SetCulture]
+    public class DefaultController : Controller
+    {
+
+    }    
+}

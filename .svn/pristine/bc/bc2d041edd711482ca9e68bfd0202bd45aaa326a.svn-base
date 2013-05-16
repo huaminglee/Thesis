@@ -1,0 +1,149 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Modules", "Modules", "{17998E6C-F20C-438C-B493-AA3423517A6A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ext.Net.MVC", "Ext.Net.MVC\Ext.Net.MVC.csproj", "{62AAF3AF-4974-405E-B272-65697FC46E83}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Axiom.Resources", "Axiom.Resources\Axiom.Resources.csproj", "{27019289-4909-48EB-A3B8-33255A010B3A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Axiom.Common", "Axiom.Common\Axiom.Common.csproj", "{8EBCA540-3161-4FBA-B36C-B75ADD3D2BE6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Axiom.Caching", "Axiom.Caching\Axiom.Caching.csproj", "{93DD1793-7499-4147-A7DB-C4732B3E1E16}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Axiom.Authorization", "Axiom.Authorization\Axiom.Authorization.csproj", "{DF554D01-FD5A-47FF-9702-95DC9AABB91F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Axiom.Lib", "Axiom.Lib\Axiom.Lib.csproj", "{C6A1EC14-A605-427D-8505-3B00EB23582E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Axiom.Web.UI", "Axiom.Web.UI\Axiom.Web.UI.csproj", "{F17BADAD-426E-4E7F-8993-3C3036876D1A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Axiom.Entities", "Axiom.Entities\Axiom.Entities.csproj", "{FD881808-DE2E-49CA-ACC0-4B29EBB3953D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Activity", "Activity\Activity.csproj", "{DC208258-398B-4B3D-9E44-4A700DF1B23C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Crm", "Crm\Crm.csproj", "{29677976-CF05-4070-9FB2-EEAB3E285738}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Settings", "Settings\Settings.csproj", "{5C0675F6-528D-46E4-AC35-E29F08D3EF89}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shell", "Shell\Shell.csproj", "{51E29F93-1761-4C73-8C36-FE573FB98165}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Axiom", "Axiom\Axiom.csproj", "{35763EA9-C102-4BC4-A8AC-E6288BDDC971}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 14
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://192.168.10.10:8080/
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = Ext.Net.MVC\\Ext.Net.MVC.csproj
+		SccProjectName1 = Ext.Net.MVC
+		SccLocalPath1 = Ext.Net.MVC
+		SccProjectUniqueName2 = Axiom.Resources\\Axiom.Resources.csproj
+		SccProjectName2 = Axiom.Resources
+		SccLocalPath2 = Axiom.Resources
+		SccProjectUniqueName3 = Axiom.Common\\Axiom.Common.csproj
+		SccProjectName3 = Axiom.Common
+		SccLocalPath3 = Axiom.Common
+		SccProjectUniqueName4 = Axiom.Caching\\Axiom.Caching.csproj
+		SccProjectName4 = Axiom.Caching
+		SccLocalPath4 = Axiom.Caching
+		SccProjectUniqueName5 = Axiom.Authorization\\Axiom.Authorization.csproj
+		SccProjectName5 = Axiom.Authorization
+		SccLocalPath5 = Axiom.Authorization
+		SccProjectUniqueName6 = Axiom.Lib\\Axiom.Lib.csproj
+		SccProjectName6 = Axiom.Lib
+		SccLocalPath6 = Axiom.Lib
+		SccProjectUniqueName7 = Axiom.Web.UI\\Axiom.Web.UI.csproj
+		SccProjectName7 = Axiom.Web.UI
+		SccLocalPath7 = Axiom.Web.UI
+		SccProjectUniqueName8 = Axiom.Entities\\Axiom.Entities.csproj
+		SccProjectName8 = Axiom.Entities
+		SccLocalPath8 = Axiom.Entities
+		SccProjectUniqueName9 = Activity\\Activity.csproj
+		SccProjectTopLevelParentUniqueName9 = Axiom.sln
+		SccProjectName9 = Activity
+		SccLocalPath9 = Activity
+		SccProjectUniqueName10 = Crm\\Crm.csproj
+		SccProjectTopLevelParentUniqueName10 = Axiom.sln
+		SccProjectName10 = Crm
+		SccLocalPath10 = Crm
+		SccProjectUniqueName11 = Settings\\Settings.csproj
+		SccProjectTopLevelParentUniqueName11 = Axiom.sln
+		SccProjectName11 = Settings
+		SccLocalPath11 = Settings
+		SccProjectUniqueName12 = Shell\\Shell.csproj
+		SccProjectTopLevelParentUniqueName12 = Axiom.sln
+		SccProjectName12 = Shell
+		SccLocalPath12 = Shell
+		SccProjectUniqueName13 = Axiom\\Axiom.csproj
+		SccProjectName13 = Axiom
+		SccLocalPath13 = Axiom
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{62AAF3AF-4974-405E-B272-65697FC46E83}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{62AAF3AF-4974-405E-B272-65697FC46E83}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{62AAF3AF-4974-405E-B272-65697FC46E83}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{62AAF3AF-4974-405E-B272-65697FC46E83}.Release|Any CPU.Build.0 = Release|Any CPU
+		{27019289-4909-48EB-A3B8-33255A010B3A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{27019289-4909-48EB-A3B8-33255A010B3A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{27019289-4909-48EB-A3B8-33255A010B3A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{27019289-4909-48EB-A3B8-33255A010B3A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8EBCA540-3161-4FBA-B36C-B75ADD3D2BE6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8EBCA540-3161-4FBA-B36C-B75ADD3D2BE6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8EBCA540-3161-4FBA-B36C-B75ADD3D2BE6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8EBCA540-3161-4FBA-B36C-B75ADD3D2BE6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{93DD1793-7499-4147-A7DB-C4732B3E1E16}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{93DD1793-7499-4147-A7DB-C4732B3E1E16}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{93DD1793-7499-4147-A7DB-C4732B3E1E16}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{93DD1793-7499-4147-A7DB-C4732B3E1E16}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DF554D01-FD5A-47FF-9702-95DC9AABB91F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DF554D01-FD5A-47FF-9702-95DC9AABB91F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DF554D01-FD5A-47FF-9702-95DC9AABB91F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DF554D01-FD5A-47FF-9702-95DC9AABB91F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C6A1EC14-A605-427D-8505-3B00EB23582E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C6A1EC14-A605-427D-8505-3B00EB23582E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C6A1EC14-A605-427D-8505-3B00EB23582E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C6A1EC14-A605-427D-8505-3B00EB23582E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F17BADAD-426E-4E7F-8993-3C3036876D1A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F17BADAD-426E-4E7F-8993-3C3036876D1A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F17BADAD-426E-4E7F-8993-3C3036876D1A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F17BADAD-426E-4E7F-8993-3C3036876D1A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FD881808-DE2E-49CA-ACC0-4B29EBB3953D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FD881808-DE2E-49CA-ACC0-4B29EBB3953D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FD881808-DE2E-49CA-ACC0-4B29EBB3953D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FD881808-DE2E-49CA-ACC0-4B29EBB3953D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DC208258-398B-4B3D-9E44-4A700DF1B23C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DC208258-398B-4B3D-9E44-4A700DF1B23C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DC208258-398B-4B3D-9E44-4A700DF1B23C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DC208258-398B-4B3D-9E44-4A700DF1B23C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{29677976-CF05-4070-9FB2-EEAB3E285738}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{29677976-CF05-4070-9FB2-EEAB3E285738}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{29677976-CF05-4070-9FB2-EEAB3E285738}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{29677976-CF05-4070-9FB2-EEAB3E285738}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5C0675F6-528D-46E4-AC35-E29F08D3EF89}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5C0675F6-528D-46E4-AC35-E29F08D3EF89}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5C0675F6-528D-46E4-AC35-E29F08D3EF89}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5C0675F6-528D-46E4-AC35-E29F08D3EF89}.Release|Any CPU.Build.0 = Release|Any CPU
+		{51E29F93-1761-4C73-8C36-FE573FB98165}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{51E29F93-1761-4C73-8C36-FE573FB98165}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{51E29F93-1761-4C73-8C36-FE573FB98165}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{51E29F93-1761-4C73-8C36-FE573FB98165}.Release|Any CPU.Build.0 = Release|Any CPU
+		{35763EA9-C102-4BC4-A8AC-E6288BDDC971}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{35763EA9-C102-4BC4-A8AC-E6288BDDC971}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{35763EA9-C102-4BC4-A8AC-E6288BDDC971}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{35763EA9-C102-4BC4-A8AC-E6288BDDC971}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{DC208258-398B-4B3D-9E44-4A700DF1B23C} = {17998E6C-F20C-438C-B493-AA3423517A6A}
+		{29677976-CF05-4070-9FB2-EEAB3E285738} = {17998E6C-F20C-438C-B493-AA3423517A6A}
+		{5C0675F6-528D-46E4-AC35-E29F08D3EF89} = {17998E6C-F20C-438C-B493-AA3423517A6A}
+		{51E29F93-1761-4C73-8C36-FE573FB98165} = {17998E6C-F20C-438C-B493-AA3423517A6A}
+	EndGlobalSection
+EndGlobal

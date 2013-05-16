@@ -1,0 +1,101 @@
+﻿<#@ template debug="true" hostspecific="true" language="C#" #>
+<#@ output extension=".cs" #>
+<#@ Assembly Name="System.Data.dll" #>
+<#@ Assembly Name="System.Core.dll" #>
+<#@ Assembly Name="System.Xml.dll" #>
+<#@ Assembly Name="System.Xml.Linq.dll" #>
+<#@ Assembly Name="System.Windows.Forms.dll" #>
+<#@ import namespace="System" #>
+<#@ import namespace="System.IO" #>
+<#@ import namespace="System.Diagnostics" #>
+<#@ import namespace="System.Linq" #>
+<#@ import namespace="System.Xml.Linq" #>
+<#@ import namespace="System.Collections" #>
+<#@ import namespace="System.Collections.Generic" #> 
+<#@ import namespace="System.Data"#>
+<#@ import namespace="System.Data.SqlClient"#>
+using System;
+   
+namespace Axiom.Entities.ViewModels
+{
+<#   
+   
+	Dictionary<string,string> DataTypes = new Dictionary<string,string>(); 
+	
+	DataTypes.Add("int","int");      
+	DataTypes.Add("tinyint","byte");
+	DataTypes.Add("date","DateTime");
+	DataTypes.Add("datetime","DateTime");
+	DataTypes.Add("smalldatetime","DateTime");     
+	DataTypes.Add("nvarchar","string");     
+	DataTypes.Add("varchar","string");     
+	DataTypes.Add("money","decimal");     
+	DataTypes.Add("bit","bool");     
+	DataTypes.Add("nchar","string");     
+	DataTypes.Add("uniqueidentifier","Guid");     
+	DataTypes.Add("smallint","short");     
+	DataTypes.Add("varbinary","byte[]");     
+	DataTypes.Add("ntext","string");     
+	DataTypes.Add("text","string");     
+	DataTypes.Add("image","byte[]");     
+	DataTypes.Add("float","double");     
+	DataTypes.Add("char","char");     
+	DataTypes.Add("decimal","decimal");
+	DataTypes.Add("xml","string");     
+	
+	
+	DataTable tables = new DataTable("Tables");
+	
+	string DbConnectionString = "Data Source=redbull;Initial Catalog=Axiom2;Persist Security Info=True;User ID=sa;Password=data1;MultipleActiveResultSets=True";
+	using (SqlConnection con = new SqlConnection(DbConnectionString)) 
+	{
+		SqlCommand TablesCommand= new SqlCommand("select table_name as Name from INFORMATION_SCHEMA.Tables where TABLE_TYPE = 'BASE TABLE' order by [Name]", con);
+		try
+		{
+			con.Open();
+			tables.Load(TablesCommand.ExecuteReader());
+
+			foreach (DataRow row in tables.Rows)
+			{
+				string TableName = row[0].ToString();
+				DataTable Columns = new DataTable("Columns");
+				SqlCommand ColumnsCommand = new SqlCommand(string.Format(@"SELECT COLUMN_NAME, DATA_TYPE, CHARACTER_MAXIMUM_LENGTH, IS_NULLABLE 
+													FROM INFORMATION_SCHEMA.COLUMNS 
+													WHERE TABLE_NAME = '{0}'",TableName),con);              
+				Columns.Load(ColumnsCommand.ExecuteReader());
+				#>
+				
+		public class <#=TableName#>ViewModel
+		{
+			
+			#region Properties
+				<#
+				foreach (DataRow TableColumn in Columns.Rows)
+				{
+					string ColumnName = TableColumn[0].ToString();
+					string ColumnDataType = TableColumn[1].ToString();
+					if(ColumnDataType == "char" && TableColumn[2] != null) { 
+						int ColumnCharacterLength = 0;
+						int.TryParse(TableColumn[2].ToString(), out ColumnCharacterLength);
+						if(ColumnCharacterLength > 1)
+							ColumnDataType = "nvarchar"; 
+					}
+					bool   IsColumnNullable = TableColumn[3].ToString()=="YES";
+				#> 				
+			public <#=DataTypes[ColumnDataType]#><#if(IsColumnNullable && DataTypes[ColumnDataType]!="string" && DataTypes[ColumnDataType]!="byte[]"){#>?<#}#> <#=ColumnName#> { get; set; }				
+			<#}#>
+					
+			#endregion
+
+		}
+			
+			<#
+			}				
+			con.Close();
+			#>//End Of Operations<#			
+		}
+		catch{con.Close();}
+	}
+		#>
+	
+}  

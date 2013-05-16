@@ -1,0 +1,95 @@
+﻿using System;
+using System.Collections;
+using System.Collections.Generic;
+using System.Data.Objects;
+using System.Linq;
+using System.Text;
+using Axiom.Common.Abstracts;
+using Axiom.Common.Models;
+using Axiom.Common.ViewModels;
+using Axiom.Entities;
+
+namespace Activity
+{
+    public class ActivityRepository : BaseRepository<AxiomObjectContext>, IActivityRepository
+    {
+        #region Compiled Queries
+
+        static readonly Func<AxiomObjectContext, int, Axiom.Entities.Activity> cqGetById = CompiledQuery.Compile<AxiomObjectContext, int, Axiom.Entities.Activity>(
+            (ctx, activityId) => ctx.Activities.Where(ti => ti.ActivityID == activityId).FirstOrDefault());
+
+        static readonly Func<AxiomObjectContext, int, ActivityViewModel> cqLoadViewModel = CompiledQuery.Compile<AxiomObjectContext, int, ActivityViewModel>(
+                (ctx, activityId) => ctx.Activities.Where(ti => ti.ActivityID == activityId).Select(p => new ActivityViewModel
+                {
+                    ActivityID = p.ActivityID,
+                    AddressID = p.Addresses.AddressID,
+                    Name = p.Name,
+                    Description = p.Description,
+                    IsCompleted = p.IsCompleted,
+                    IsInvoiced = p.IsInvoiced,
+                    StartDate = p.StartDate,
+                    EndDate = p.EndDate,
+                    OwnerID = p.OwnerID,
+                    ExecuterID = p.ExecuterID,
+                    DocumentID = p.DocumentID,
+                    Value = p.Value,
+                    TypeID = p.TypeID,
+                    RelationID = p.RelationID,
+                    RemainderDate = p.RemainderDate,  
+                    PlannedHours = p.PlannedHours,
+                    ShiftID = p.ShiftID,
+                    InvoiceText = p.InvoiceText,
+                    InvoiceAddressID = p.InvoiceAddressID,
+
+                    TypeName = p.ActivityType.Name,
+                    ExecuterName = p.Company.Name,
+                    OwnerName = p.Company1.Name,
+                    Address = p.Addresses.Street,
+                    ShiftNumber = p.Shift.Name,
+                    Relation = p.Relation.Name,
+                    InvoiceAddress = p.Addresses1.Street
+                }).FirstOrDefault());
+
+        #endregion
+
+        #region IRepository<ActivityViewModel> Members
+
+        public ActivityViewModel LoadViewModel(int id)
+        {
+            return cqLoadViewModel.Invoke(context, id);
+        }
+
+        public bool Save(int id, ActivityViewModel viewModel, List<RuleViolation> validationResults)
+        {
+            return SaveViewModel(id, cqGetById, viewModel, validationResults);
+        }
+
+        public bool Delete(List<int> models)
+        {
+            return DeleteEntities(models, cqGetById);
+        }
+
+        public IEnumerable GetByFilter(IDataViewModel viewModel, out int totalCount)
+        {
+            var query = context.Activities
+                        .Select(a => new
+                        {
+                            ActivityID = a.ActivityID,
+                            TypeName = a.ActivityType.Name,
+                            Name = a.Name,
+                            Value = a.Value,
+                            StartDate = a.StartDate,
+                            EndDate = a.EndDate,
+                            OwnerName = a.Company1.Name,
+                            ExecuterName = a.Company.Name,
+                            IsCompleted = a.IsCompleted,
+                            IsInvoiced = a.IsInvoiced,
+                            AddressID = a.Addresses.AddressID
+                        });
+
+            return query.ToList(viewModel, out totalCount);
+        }
+
+        #endregion
+    }
+}

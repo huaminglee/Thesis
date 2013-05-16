@@ -1,0 +1,909 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Thesis.Entities.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+  <EntityContainer Name="ThesisEntitiesStoreContainer">
+    <EntitySet Name="Activity" EntityType="Thesis.Entities.Store.Activity" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="ActivityTypes" EntityType="Thesis.Entities.Store.ActivityTypes" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Addresses" EntityType="Thesis.Entities.Store.Addresses" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="AddressTypes" EntityType="Thesis.Entities.Store.AddressTypes" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="aspnet_Applications" EntityType="Thesis.Entities.Store.aspnet_Applications" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="aspnet_Membership" EntityType="Thesis.Entities.Store.aspnet_Membership" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="aspnet_Paths" EntityType="Thesis.Entities.Store.aspnet_Paths" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="aspnet_PersonalizationAllUsers" EntityType="Thesis.Entities.Store.aspnet_PersonalizationAllUsers" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="aspnet_PersonalizationPerUser" EntityType="Thesis.Entities.Store.aspnet_PersonalizationPerUser" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="aspnet_Profile" EntityType="Thesis.Entities.Store.aspnet_Profile" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="aspnet_Roles" EntityType="Thesis.Entities.Store.aspnet_Roles" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="aspnet_SchemaVersions" EntityType="Thesis.Entities.Store.aspnet_SchemaVersions" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="aspnet_Users" EntityType="Thesis.Entities.Store.aspnet_Users" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="aspnet_UsersInRoles" EntityType="Thesis.Entities.Store.aspnet_UsersInRoles" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="aspnet_WebEvent_Events" EntityType="Thesis.Entities.Store.aspnet_WebEvent_Events" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Cities" EntityType="Thesis.Entities.Store.Cities" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Companies" EntityType="Thesis.Entities.Store.Companies" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Countries" EntityType="Thesis.Entities.Store.Countries" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Electriciteities" EntityType="Thesis.Entities.Store.Electriciteities" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Employees" EntityType="Thesis.Entities.Store.Employees" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Files" EntityType="Thesis.Entities.Store.Files" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Items" EntityType="Thesis.Entities.Store.Items" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Languages" EntityType="Thesis.Entities.Store.Languages" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Lookup" EntityType="Thesis.Entities.Store.Lookup" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="LookupResources" EntityType="Thesis.Entities.Store.LookupResources" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Modules" EntityType="Thesis.Entities.Store.Modules" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="ModulesInRoles" EntityType="Thesis.Entities.Store.ModulesInRoles" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="ObjectTypes" EntityType="Thesis.Entities.Store.ObjectTypes" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="RelationInAddresses" EntityType="Thesis.Entities.Store.RelationInAddresses" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Relations" EntityType="Thesis.Entities.Store.Relations" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="RolesInTree" EntityType="Thesis.Entities.Store.RolesInTree" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Roofs" EntityType="Thesis.Entities.Store.Roofs" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Shifts" EntityType="Thesis.Entities.Store.Shifts" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="sysdiagrams" EntityType="Thesis.Entities.Store.sysdiagrams" store:Type="Tables" Schema="dbo" />
+    <AssociationSet Name="FK__aspnet_Me__Appli__6442E2C9" Association="Thesis.Entities.Store.FK__aspnet_Me__Appli__6442E2C9">
+      <End Role="aspnet_Applications" EntitySet="aspnet_Applications" />
+      <End Role="aspnet_Membership" EntitySet="aspnet_Membership" />
+    </AssociationSet>
+    <AssociationSet Name="FK__aspnet_Me__UserI__65370702" Association="Thesis.Entities.Store.FK__aspnet_Me__UserI__65370702">
+      <End Role="aspnet_Users" EntitySet="aspnet_Users" />
+      <End Role="aspnet_Membership" EntitySet="aspnet_Membership" />
+    </AssociationSet>
+    <AssociationSet Name="FK__aspnet_Pa__Appli__15DA3E5D" Association="Thesis.Entities.Store.FK__aspnet_Pa__Appli__15DA3E5D">
+      <End Role="aspnet_Applications" EntitySet="aspnet_Applications" />
+      <End Role="aspnet_Paths" EntitySet="aspnet_Paths" />
+    </AssociationSet>
+    <AssociationSet Name="FK__aspnet_Pe__PathI__1B9317B3" Association="Thesis.Entities.Store.FK__aspnet_Pe__PathI__1B9317B3">
+      <End Role="aspnet_Paths" EntitySet="aspnet_Paths" />
+      <End Role="aspnet_PersonalizationAllUsers" EntitySet="aspnet_PersonalizationAllUsers" />
+    </AssociationSet>
+    <AssociationSet Name="FK__aspnet_Pe__PathI__1F63A897" Association="Thesis.Entities.Store.FK__aspnet_Pe__PathI__1F63A897">
+      <End Role="aspnet_Paths" EntitySet="aspnet_Paths" />
+      <End Role="aspnet_PersonalizationPerUser" EntitySet="aspnet_PersonalizationPerUser" />
+    </AssociationSet>
+    <AssociationSet Name="FK__aspnet_Pe__UserI__2057CCD0" Association="Thesis.Entities.Store.FK__aspnet_Pe__UserI__2057CCD0">
+      <End Role="aspnet_Users" EntitySet="aspnet_Users" />
+      <End Role="aspnet_PersonalizationPerUser" EntitySet="aspnet_PersonalizationPerUser" />
+    </AssociationSet>
+    <AssociationSet Name="FK__aspnet_Pr__UserI__793DFFAF" Association="Thesis.Entities.Store.FK__aspnet_Pr__UserI__793DFFAF">
+      <End Role="aspnet_Users" EntitySet="aspnet_Users" />
+      <End Role="aspnet_Profile" EntitySet="aspnet_Profile" />
+    </AssociationSet>
+    <AssociationSet Name="FK__aspnet_Ro__Appli__02C769E9" Association="Thesis.Entities.Store.FK__aspnet_Ro__Appli__02C769E9">
+      <End Role="aspnet_Applications" EntitySet="aspnet_Applications" />
+      <End Role="aspnet_Roles" EntitySet="aspnet_Roles" />
+    </AssociationSet>
+    <AssociationSet Name="FK__aspnet_Us__Appli__540C7B00" Association="Thesis.Entities.Store.FK__aspnet_Us__Appli__540C7B00">
+      <End Role="aspnet_Applications" EntitySet="aspnet_Applications" />
+      <End Role="aspnet_Users" EntitySet="aspnet_Users" />
+    </AssociationSet>
+    <AssociationSet Name="FK__aspnet_Us__RoleI__078C1F06" Association="Thesis.Entities.Store.FK__aspnet_Us__RoleI__078C1F06">
+      <End Role="aspnet_Roles" EntitySet="aspnet_Roles" />
+      <End Role="aspnet_UsersInRoles" EntitySet="aspnet_UsersInRoles" />
+    </AssociationSet>
+    <AssociationSet Name="FK__aspnet_Us__UserI__0697FACD" Association="Thesis.Entities.Store.FK__aspnet_Us__UserI__0697FACD">
+      <End Role="aspnet_Users" EntitySet="aspnet_Users" />
+      <End Role="aspnet_UsersInRoles" EntitySet="aspnet_UsersInRoles" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Activities_ActivityTypes" Association="Thesis.Entities.Store.FK_Activities_ActivityTypes">
+      <End Role="ActivityTypes" EntitySet="ActivityTypes" />
+      <End Role="Activity" EntitySet="Activity" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Activities_Addresses" Association="Thesis.Entities.Store.FK_Activities_Addresses">
+      <End Role="Addresses" EntitySet="Addresses" />
+      <End Role="Activity" EntitySet="Activity" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Activities_Addresses1" Association="Thesis.Entities.Store.FK_Activities_Addresses1">
+      <End Role="Addresses" EntitySet="Addresses" />
+      <End Role="Activity" EntitySet="Activity" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Activities_Executer" Association="Thesis.Entities.Store.FK_Activities_Executer">
+      <End Role="Companies" EntitySet="Companies" />
+      <End Role="Activity" EntitySet="Activity" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Activities_Owner" Association="Thesis.Entities.Store.FK_Activities_Owner">
+      <End Role="Companies" EntitySet="Companies" />
+      <End Role="Activity" EntitySet="Activity" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Activities_Relations" Association="Thesis.Entities.Store.FK_Activities_Relations">
+      <End Role="Relations" EntitySet="Relations" />
+      <End Role="Activity" EntitySet="Activity" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Activities_Shifts" Association="Thesis.Entities.Store.FK_Activities_Shifts">
+      <End Role="Shifts" EntitySet="Shifts" />
+      <End Role="Activity" EntitySet="Activity" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Addresses_Cities" Association="Thesis.Entities.Store.FK_Addresses_Cities">
+      <End Role="Cities" EntitySet="Cities" />
+      <End Role="Addresses" EntitySet="Addresses" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Addresses_Countries" Association="Thesis.Entities.Store.FK_Addresses_Countries">
+      <End Role="Countries" EntitySet="Countries" />
+      <End Role="Addresses" EntitySet="Addresses" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Addresses_Electriciteities" Association="Thesis.Entities.Store.FK_Addresses_Electriciteities">
+      <End Role="Electriciteities" EntitySet="Electriciteities" />
+      <End Role="Addresses" EntitySet="Addresses" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Addresses_Lookup" Association="Thesis.Entities.Store.FK_Addresses_Lookup">
+      <End Role="Lookup" EntitySet="Lookup" />
+      <End Role="Addresses" EntitySet="Addresses" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Addresses_ObjectTypes" Association="Thesis.Entities.Store.FK_Addresses_ObjectTypes">
+      <End Role="ObjectTypes" EntitySet="ObjectTypes" />
+      <End Role="Addresses" EntitySet="Addresses" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Cities_Countries" Association="Thesis.Entities.Store.FK_Cities_Countries">
+      <End Role="Countries" EntitySet="Countries" />
+      <End Role="Cities" EntitySet="Cities" />
+    </AssociationSet>
+    <AssociationSet Name="FK_LookupResources_Languages" Association="Thesis.Entities.Store.FK_LookupResources_Languages">
+      <End Role="Languages" EntitySet="Languages" />
+      <End Role="LookupResources" EntitySet="LookupResources" />
+    </AssociationSet>
+    <AssociationSet Name="FK_LookupResources_Lookup" Association="Thesis.Entities.Store.FK_LookupResources_Lookup">
+      <End Role="Lookup" EntitySet="Lookup" />
+      <End Role="LookupResources" EntitySet="LookupResources" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ModulesInRoles_aspnet_Roles" Association="Thesis.Entities.Store.FK_ModulesInRoles_aspnet_Roles">
+      <End Role="aspnet_Roles" EntitySet="aspnet_Roles" />
+      <End Role="ModulesInRoles" EntitySet="ModulesInRoles" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ModulesInRoles_Modules" Association="Thesis.Entities.Store.FK_ModulesInRoles_Modules">
+      <End Role="Modules" EntitySet="Modules" />
+      <End Role="ModulesInRoles" EntitySet="ModulesInRoles" />
+    </AssociationSet>
+    <AssociationSet Name="FK_RelationInAddresses_Addresses" Association="Thesis.Entities.Store.FK_RelationInAddresses_Addresses">
+      <End Role="Addresses" EntitySet="Addresses" />
+      <End Role="RelationInAddresses" EntitySet="RelationInAddresses" />
+    </AssociationSet>
+    <AssociationSet Name="FK_RelationInAddresses_Relations" Association="Thesis.Entities.Store.FK_RelationInAddresses_Relations">
+      <End Role="Relations" EntitySet="Relations" />
+      <End Role="RelationInAddresses" EntitySet="RelationInAddresses" />
+    </AssociationSet>
+    <AssociationSet Name="FK_RolesInTree_aspnet_Roles" Association="Thesis.Entities.Store.FK_RolesInTree_aspnet_Roles">
+      <End Role="aspnet_Roles" EntitySet="aspnet_Roles" />
+      <End Role="RolesInTree" EntitySet="RolesInTree" />
+    </AssociationSet>
+    <AssociationSet Name="FK_RolesInTree_aspnet_Roles1" Association="Thesis.Entities.Store.FK_RolesInTree_aspnet_Roles1">
+      <End Role="aspnet_Roles" EntitySet="aspnet_Roles" />
+      <End Role="RolesInTree" EntitySet="RolesInTree" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Activity">
+    <Key>
+      <PropertyRef Name="ActivityID" />
+    </Key>
+    <Property Name="ActivityID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="TypeID" Type="int" Nullable="false" />
+    <Property Name="AddressID" Type="int" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="Description" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="IsCompleted" Type="bit" Nullable="false" />
+    <Property Name="IsInvoiced" Type="bit" Nullable="false" />
+    <Property Name="RemainderDate" Type="datetime" />
+    <Property Name="StartDate" Type="datetime" />
+    <Property Name="EndDate" Type="datetime" Nullable="false" />
+    <Property Name="OwnerID" Type="int" Nullable="false" />
+    <Property Name="ExecuterID" Type="int" Nullable="false" />
+    <Property Name="PlannedHours" Type="int" />
+    <Property Name="ShiftID" Type="int" />
+    <Property Name="Value" Type="decimal" Precision="10" Scale="2" />
+    <Property Name="InvoiceText" Type="nvarchar" MaxLength="255" />
+    <Property Name="RelationID" Type="int" />
+    <Property Name="InvoiceAddressID" Type="int" />
+    <Property Name="DocumentID" Type="int" />
+  </EntityType>
+  <EntityType Name="ActivityTypes">
+    <Key>
+      <PropertyRef Name="ActivityTypeID" />
+    </Key>
+    <Property Name="ActivityTypeID" Type="int" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="255" />
+  </EntityType>
+  <EntityType Name="Addresses">
+    <Key>
+      <PropertyRef Name="AddressID" />
+    </Key>
+    <Property Name="AddressID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="IsActive" Type="bit" />
+    <Property Name="AddressType" Type="int" />
+    <Property Name="Street" Type="nvarchar" MaxLength="255" />
+    <Property Name="HouseNumber" Type="nvarchar" MaxLength="255" />
+    <Property Name="Addition" Type="nvarchar" MaxLength="255" />
+    <Property Name="PostalCode" Type="nvarchar" MaxLength="255" />
+    <Property Name="CityID" Type="int" />
+    <Property Name="CountryID" Type="int" />
+    <Property Name="Phone" Type="nvarchar" MaxLength="255" />
+    <Property Name="Fax" Type="nvarchar" MaxLength="255" />
+    <Property Name="Description" Type="nvarchar" MaxLength="255" />
+    <Property Name="KeyPersonName" Type="nvarchar" MaxLength="255" />
+    <Property Name="KeyPersonPhone" Type="nvarchar" MaxLength="255" />
+    <Property Name="ObjectType" Type="int" />
+    <Property Name="LastInvoiceDate" Type="smalldatetime" />
+    <Property Name="Electriciteit" Type="int" />
+    <Property Name="DetailDescription" Type="nvarchar" MaxLength="255" />
+    <Property Name="Location" Type="nvarchar" MaxLength="255" />
+    <Property Name="Information" Type="nvarchar" MaxLength="255" />
+    <Property Name="ExtraLetterText" Type="nvarchar" MaxLength="255" />
+  </EntityType>
+  <EntityType Name="AddressTypes">
+    <Key>
+      <PropertyRef Name="AddressTypeID" />
+    </Key>
+    <Property Name="AddressTypeID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="255" />
+  </EntityType>
+  <EntityType Name="aspnet_Applications">
+    <Key>
+      <PropertyRef Name="ApplicationId" />
+    </Key>
+    <Property Name="ApplicationName" Type="nvarchar" Nullable="false" MaxLength="256" />
+    <Property Name="LoweredApplicationName" Type="nvarchar" Nullable="false" MaxLength="256" />
+    <Property Name="ApplicationId" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Description" Type="nvarchar" MaxLength="256" />
+  </EntityType>
+  <EntityType Name="aspnet_Membership">
+    <Key>
+      <PropertyRef Name="UserId" />
+    </Key>
+    <Property Name="ApplicationId" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="UserId" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Password" Type="nvarchar" Nullable="false" MaxLength="128" />
+    <Property Name="PasswordFormat" Type="int" Nullable="false" />
+    <Property Name="PasswordSalt" Type="nvarchar" Nullable="false" MaxLength="128" />
+    <Property Name="MobilePIN" Type="nvarchar" MaxLength="16" />
+    <Property Name="Email" Type="nvarchar" MaxLength="256" />
+    <Property Name="LoweredEmail" Type="nvarchar" MaxLength="256" />
+    <Property Name="PasswordQuestion" Type="nvarchar" MaxLength="256" />
+    <Property Name="PasswordAnswer" Type="nvarchar" MaxLength="128" />
+    <Property Name="IsApproved" Type="bit" Nullable="false" />
+    <Property Name="IsLockedOut" Type="bit" Nullable="false" />
+    <Property Name="CreateDate" Type="datetime" Nullable="false" />
+    <Property Name="LastLoginDate" Type="datetime" Nullable="false" />
+    <Property Name="LastPasswordChangedDate" Type="datetime" Nullable="false" />
+    <Property Name="LastLockoutDate" Type="datetime" Nullable="false" />
+    <Property Name="FailedPasswordAttemptCount" Type="int" Nullable="false" />
+    <Property Name="FailedPasswordAttemptWindowStart" Type="datetime" Nullable="false" />
+    <Property Name="FailedPasswordAnswerAttemptCount" Type="int" Nullable="false" />
+    <Property Name="FailedPasswordAnswerAttemptWindowStart" Type="datetime" Nullable="false" />
+    <Property Name="Comment" Type="ntext" />
+  </EntityType>
+  <EntityType Name="aspnet_Paths">
+    <Key>
+      <PropertyRef Name="PathId" />
+    </Key>
+    <Property Name="ApplicationId" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="PathId" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Path" Type="nvarchar" Nullable="false" MaxLength="256" />
+    <Property Name="LoweredPath" Type="nvarchar" Nullable="false" MaxLength="256" />
+  </EntityType>
+  <EntityType Name="aspnet_PersonalizationAllUsers">
+    <Key>
+      <PropertyRef Name="PathId" />
+    </Key>
+    <Property Name="PathId" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="PageSettings" Type="image" Nullable="false" />
+    <Property Name="LastUpdatedDate" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="aspnet_PersonalizationPerUser">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="PathId" Type="uniqueidentifier" />
+    <Property Name="UserId" Type="uniqueidentifier" />
+    <Property Name="PageSettings" Type="image" Nullable="false" />
+    <Property Name="LastUpdatedDate" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="aspnet_Profile">
+    <Key>
+      <PropertyRef Name="UserId" />
+    </Key>
+    <Property Name="UserId" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="PropertyNames" Type="ntext" Nullable="false" />
+    <Property Name="PropertyValuesString" Type="ntext" Nullable="false" />
+    <Property Name="PropertyValuesBinary" Type="image" Nullable="false" />
+    <Property Name="LastUpdatedDate" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="aspnet_Roles">
+    <Key>
+      <PropertyRef Name="RoleId" />
+    </Key>
+    <Property Name="ApplicationId" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="RoleId" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="RoleName" Type="nvarchar" Nullable="false" MaxLength="256" />
+    <Property Name="LoweredRoleName" Type="nvarchar" Nullable="false" MaxLength="256" />
+    <Property Name="Description" Type="nvarchar" MaxLength="256" />
+  </EntityType>
+  <EntityType Name="aspnet_SchemaVersions">
+    <Key>
+      <PropertyRef Name="Feature" />
+      <PropertyRef Name="CompatibleSchemaVersion" />
+    </Key>
+    <Property Name="Feature" Type="nvarchar" Nullable="false" MaxLength="128" />
+    <Property Name="CompatibleSchemaVersion" Type="nvarchar" Nullable="false" MaxLength="128" />
+    <Property Name="IsCurrentVersion" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="aspnet_Users">
+    <Key>
+      <PropertyRef Name="UserId" />
+    </Key>
+    <Property Name="ApplicationId" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="UserId" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="UserName" Type="nvarchar" Nullable="false" MaxLength="256" />
+    <Property Name="LoweredUserName" Type="nvarchar" Nullable="false" MaxLength="256" />
+    <Property Name="MobileAlias" Type="nvarchar" MaxLength="16" />
+    <Property Name="IsAnonymous" Type="bit" Nullable="false" />
+    <Property Name="LastActivityDate" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="aspnet_UsersInRoles">
+    <Key>
+      <PropertyRef Name="UserId" />
+      <PropertyRef Name="RoleId" />
+    </Key>
+    <Property Name="UserId" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="RoleId" Type="uniqueidentifier" Nullable="false" />
+  </EntityType>
+  <EntityType Name="aspnet_WebEvent_Events">
+    <Key>
+      <PropertyRef Name="EventId" />
+    </Key>
+    <Property Name="EventId" Type="char" Nullable="false" MaxLength="32" />
+    <Property Name="EventTimeUtc" Type="datetime" Nullable="false" />
+    <Property Name="EventTime" Type="datetime" Nullable="false" />
+    <Property Name="EventType" Type="nvarchar" Nullable="false" MaxLength="256" />
+    <Property Name="EventSequence" Type="decimal" Nullable="false" Precision="19" />
+    <Property Name="EventOccurrence" Type="decimal" Nullable="false" Precision="19" />
+    <Property Name="EventCode" Type="int" Nullable="false" />
+    <Property Name="EventDetailCode" Type="int" Nullable="false" />
+    <Property Name="Message" Type="nvarchar" MaxLength="1024" />
+    <Property Name="ApplicationPath" Type="nvarchar" MaxLength="256" />
+    <Property Name="ApplicationVirtualPath" Type="nvarchar" MaxLength="256" />
+    <Property Name="MachineName" Type="nvarchar" Nullable="false" MaxLength="256" />
+    <Property Name="RequestUrl" Type="nvarchar" MaxLength="1024" />
+    <Property Name="ExceptionType" Type="nvarchar" MaxLength="256" />
+    <Property Name="Details" Type="ntext" />
+  </EntityType>
+  <EntityType Name="Cities">
+    <Key>
+      <PropertyRef Name="CityID" />
+    </Key>
+    <Property Name="CityID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="CountryID" Type="int" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="AreaCode" Type="nvarchar" MaxLength="10" />
+  </EntityType>
+  <EntityType Name="Companies">
+    <Key>
+      <PropertyRef Name="CompanyID" />
+    </Key>
+    <Property Name="CompanyID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="255" />
+  </EntityType>
+  <EntityType Name="Countries">
+    <Key>
+      <PropertyRef Name="CountryID" />
+    </Key>
+    <Property Name="CountryID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="AreaCode" Type="nvarchar" MaxLength="50" />
+    <Property Name="Flag" Type="varchar" MaxLength="150" />
+  </EntityType>
+  <EntityType Name="Electriciteities">
+    <Key>
+      <PropertyRef Name="ElectriciteitID" />
+    </Key>
+    <Property Name="ElectriciteitID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="255" />
+  </EntityType>
+  <EntityType Name="Employees">
+    <Key>
+      <PropertyRef Name="EmployeeId" />
+    </Key>
+    <Property Name="EmployeeId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="Surname" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="StartDate" Type="datetime" />
+    <Property Name="Salary" Type="decimal" Precision="10" Scale="2" />
+    <Property Name="Age" Type="int" />
+  </EntityType>
+  <EntityType Name="Files">
+    <Key>
+      <PropertyRef Name="FileID" />
+    </Key>
+    <Property Name="FileID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="FileName" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="Mimetype" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="Size" Type="int" />
+    <Property Name="Path" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="Alias" Type="nvarchar" Nullable="false" MaxLength="255" />
+  </EntityType>
+  <EntityType Name="Items">
+    <Key>
+      <PropertyRef Name="ItemId" />
+    </Key>
+    <Property Name="ItemId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="ItemCode" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="Description" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Languages">
+    <Key>
+      <PropertyRef Name="LanguageId" />
+    </Key>
+    <Property Name="LanguageId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="Code" Type="nvarchar" Nullable="false" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Lookup">
+    <Key>
+      <PropertyRef Name="LookupId" />
+    </Key>
+    <Property Name="LookupId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="LookupTypeId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="LookupResources">
+    <Key>
+      <PropertyRef Name="LookupResourcesId" />
+    </Key>
+    <Property Name="LookupResourcesId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="LookupId" Type="int" Nullable="false" />
+    <Property Name="LanguageId" Type="int" Nullable="false" />
+    <Property Name="Text" Type="nvarchar" Nullable="false" MaxLength="200" />
+  </EntityType>
+  <EntityType Name="Modules">
+    <Key>
+      <PropertyRef Name="ModuleId" />
+    </Key>
+    <Property Name="ModuleId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="varchar" Nullable="false" MaxLength="255" />
+    <Property Name="LoweredName" Type="varchar" Nullable="false" MaxLength="255" />
+  </EntityType>
+  <EntityType Name="ModulesInRoles">
+    <Key>
+      <PropertyRef Name="ModulesInRolesId" />
+    </Key>
+    <Property Name="ModulesInRolesId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="ModuleId" Type="int" Nullable="false" />
+    <Property Name="RoleId" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="ProcessTypeId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ObjectTypes">
+    <Key>
+      <PropertyRef Name="ObjectTypeID" />
+    </Key>
+    <Property Name="ObjectTypeID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="255" />
+  </EntityType>
+  <EntityType Name="RelationInAddresses">
+    <Key>
+      <PropertyRef Name="RelationInAddressesID" />
+    </Key>
+    <Property Name="RelationInAddressesID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="AddressID" Type="int" Nullable="false" />
+    <Property Name="RelationID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Relations">
+    <Key>
+      <PropertyRef Name="RelationID" />
+    </Key>
+    <Property Name="RelationID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="255" />
+  </EntityType>
+  <EntityType Name="RolesInTree">
+    <Key>
+      <PropertyRef Name="RolesInTreeId" />
+    </Key>
+    <Property Name="RolesInTreeId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="RoleId" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="ParentRoleId" Type="uniqueidentifier" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Roofs">
+    <Key>
+      <PropertyRef Name="RoofID" />
+    </Key>
+    <Property Name="RoofID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="varchar" Nullable="false" MaxLength="255" />
+  </EntityType>
+  <EntityType Name="Shifts">
+    <Key>
+      <PropertyRef Name="ShiftID" />
+    </Key>
+    <Property Name="ShiftID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="255" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="nvarchar" Nullable="false" MaxLength="128" />
+    <Property Name="principal_id" Type="int" Nullable="false" />
+    <Property Name="diagram_id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="int" />
+    <Property Name="definition" Type="varbinary(max)" />
+  </EntityType>
+  <Association Name="FK__aspnet_Me__Appli__6442E2C9">
+    <End Role="aspnet_Applications" Type="Thesis.Entities.Store.aspnet_Applications" Multiplicity="1" />
+    <End Role="aspnet_Membership" Type="Thesis.Entities.Store.aspnet_Membership" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="aspnet_Applications">
+        <PropertyRef Name="ApplicationId" />
+      </Principal>
+      <Dependent Role="aspnet_Membership">
+        <PropertyRef Name="ApplicationId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__aspnet_Me__UserI__65370702">
+    <End Role="aspnet_Users" Type="Thesis.Entities.Store.aspnet_Users" Multiplicity="1" />
+    <End Role="aspnet_Membership" Type="Thesis.Entities.Store.aspnet_Membership" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="aspnet_Users">
+        <PropertyRef Name="UserId" />
+      </Principal>
+      <Dependent Role="aspnet_Membership">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__aspnet_Pa__Appli__15DA3E5D">
+    <End Role="aspnet_Applications" Type="Thesis.Entities.Store.aspnet_Applications" Multiplicity="1" />
+    <End Role="aspnet_Paths" Type="Thesis.Entities.Store.aspnet_Paths" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="aspnet_Applications">
+        <PropertyRef Name="ApplicationId" />
+      </Principal>
+      <Dependent Role="aspnet_Paths">
+        <PropertyRef Name="ApplicationId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__aspnet_Pe__PathI__1B9317B3">
+    <End Role="aspnet_Paths" Type="Thesis.Entities.Store.aspnet_Paths" Multiplicity="1" />
+    <End Role="aspnet_PersonalizationAllUsers" Type="Thesis.Entities.Store.aspnet_PersonalizationAllUsers" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="aspnet_Paths">
+        <PropertyRef Name="PathId" />
+      </Principal>
+      <Dependent Role="aspnet_PersonalizationAllUsers">
+        <PropertyRef Name="PathId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__aspnet_Pe__PathI__1F63A897">
+    <End Role="aspnet_Paths" Type="Thesis.Entities.Store.aspnet_Paths" Multiplicity="0..1" />
+    <End Role="aspnet_PersonalizationPerUser" Type="Thesis.Entities.Store.aspnet_PersonalizationPerUser" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="aspnet_Paths">
+        <PropertyRef Name="PathId" />
+      </Principal>
+      <Dependent Role="aspnet_PersonalizationPerUser">
+        <PropertyRef Name="PathId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__aspnet_Pe__UserI__2057CCD0">
+    <End Role="aspnet_Users" Type="Thesis.Entities.Store.aspnet_Users" Multiplicity="0..1" />
+    <End Role="aspnet_PersonalizationPerUser" Type="Thesis.Entities.Store.aspnet_PersonalizationPerUser" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="aspnet_Users">
+        <PropertyRef Name="UserId" />
+      </Principal>
+      <Dependent Role="aspnet_PersonalizationPerUser">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__aspnet_Pr__UserI__793DFFAF">
+    <End Role="aspnet_Users" Type="Thesis.Entities.Store.aspnet_Users" Multiplicity="1" />
+    <End Role="aspnet_Profile" Type="Thesis.Entities.Store.aspnet_Profile" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="aspnet_Users">
+        <PropertyRef Name="UserId" />
+      </Principal>
+      <Dependent Role="aspnet_Profile">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__aspnet_Ro__Appli__02C769E9">
+    <End Role="aspnet_Applications" Type="Thesis.Entities.Store.aspnet_Applications" Multiplicity="1" />
+    <End Role="aspnet_Roles" Type="Thesis.Entities.Store.aspnet_Roles" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="aspnet_Applications">
+        <PropertyRef Name="ApplicationId" />
+      </Principal>
+      <Dependent Role="aspnet_Roles">
+        <PropertyRef Name="ApplicationId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__aspnet_Us__Appli__540C7B00">
+    <End Role="aspnet_Applications" Type="Thesis.Entities.Store.aspnet_Applications" Multiplicity="1" />
+    <End Role="aspnet_Users" Type="Thesis.Entities.Store.aspnet_Users" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="aspnet_Applications">
+        <PropertyRef Name="ApplicationId" />
+      </Principal>
+      <Dependent Role="aspnet_Users">
+        <PropertyRef Name="ApplicationId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__aspnet_Us__RoleI__078C1F06">
+    <End Role="aspnet_Roles" Type="Thesis.Entities.Store.aspnet_Roles" Multiplicity="1" />
+    <End Role="aspnet_UsersInRoles" Type="Thesis.Entities.Store.aspnet_UsersInRoles" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="aspnet_Roles">
+        <PropertyRef Name="RoleId" />
+      </Principal>
+      <Dependent Role="aspnet_UsersInRoles">
+        <PropertyRef Name="RoleId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__aspnet_Us__UserI__0697FACD">
+    <End Role="aspnet_Users" Type="Thesis.Entities.Store.aspnet_Users" Multiplicity="1" />
+    <End Role="aspnet_UsersInRoles" Type="Thesis.Entities.Store.aspnet_UsersInRoles" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="aspnet_Users">
+        <PropertyRef Name="UserId" />
+      </Principal>
+      <Dependent Role="aspnet_UsersInRoles">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Activities_ActivityTypes">
+    <End Role="ActivityTypes" Type="Thesis.Entities.Store.ActivityTypes" Multiplicity="1" />
+    <End Role="Activity" Type="Thesis.Entities.Store.Activity" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ActivityTypes">
+        <PropertyRef Name="ActivityTypeID" />
+      </Principal>
+      <Dependent Role="Activity">
+        <PropertyRef Name="TypeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Activities_Addresses">
+    <End Role="Addresses" Type="Thesis.Entities.Store.Addresses" Multiplicity="1" />
+    <End Role="Activity" Type="Thesis.Entities.Store.Activity" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Addresses">
+        <PropertyRef Name="AddressID" />
+      </Principal>
+      <Dependent Role="Activity">
+        <PropertyRef Name="AddressID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Activities_Addresses1">
+    <End Role="Addresses" Type="Thesis.Entities.Store.Addresses" Multiplicity="0..1" />
+    <End Role="Activity" Type="Thesis.Entities.Store.Activity" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Addresses">
+        <PropertyRef Name="AddressID" />
+      </Principal>
+      <Dependent Role="Activity">
+        <PropertyRef Name="InvoiceAddressID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Activities_Executer">
+    <End Role="Companies" Type="Thesis.Entities.Store.Companies" Multiplicity="1" />
+    <End Role="Activity" Type="Thesis.Entities.Store.Activity" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Companies">
+        <PropertyRef Name="CompanyID" />
+      </Principal>
+      <Dependent Role="Activity">
+        <PropertyRef Name="ExecuterID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Activities_Owner">
+    <End Role="Companies" Type="Thesis.Entities.Store.Companies" Multiplicity="1" />
+    <End Role="Activity" Type="Thesis.Entities.Store.Activity" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Companies">
+        <PropertyRef Name="CompanyID" />
+      </Principal>
+      <Dependent Role="Activity">
+        <PropertyRef Name="OwnerID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Activities_Relations">
+    <End Role="Relations" Type="Thesis.Entities.Store.Relations" Multiplicity="0..1" />
+    <End Role="Activity" Type="Thesis.Entities.Store.Activity" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Relations">
+        <PropertyRef Name="RelationID" />
+      </Principal>
+      <Dependent Role="Activity">
+        <PropertyRef Name="RelationID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Activities_Shifts">
+    <End Role="Shifts" Type="Thesis.Entities.Store.Shifts" Multiplicity="0..1" />
+    <End Role="Activity" Type="Thesis.Entities.Store.Activity" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Shifts">
+        <PropertyRef Name="ShiftID" />
+      </Principal>
+      <Dependent Role="Activity">
+        <PropertyRef Name="ShiftID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Addresses_Cities">
+    <End Role="Cities" Type="Thesis.Entities.Store.Cities" Multiplicity="0..1" />
+    <End Role="Addresses" Type="Thesis.Entities.Store.Addresses" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Cities">
+        <PropertyRef Name="CityID" />
+      </Principal>
+      <Dependent Role="Addresses">
+        <PropertyRef Name="CityID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Addresses_Countries">
+    <End Role="Countries" Type="Thesis.Entities.Store.Countries" Multiplicity="0..1" />
+    <End Role="Addresses" Type="Thesis.Entities.Store.Addresses" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Countries">
+        <PropertyRef Name="CountryID" />
+      </Principal>
+      <Dependent Role="Addresses">
+        <PropertyRef Name="CountryID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Addresses_Electriciteities">
+    <End Role="Electriciteities" Type="Thesis.Entities.Store.Electriciteities" Multiplicity="0..1" />
+    <End Role="Addresses" Type="Thesis.Entities.Store.Addresses" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Electriciteities">
+        <PropertyRef Name="ElectriciteitID" />
+      </Principal>
+      <Dependent Role="Addresses">
+        <PropertyRef Name="Electriciteit" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Addresses_Lookup">
+    <End Role="Lookup" Type="Thesis.Entities.Store.Lookup" Multiplicity="0..1" />
+    <End Role="Addresses" Type="Thesis.Entities.Store.Addresses" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Lookup">
+        <PropertyRef Name="LookupId" />
+      </Principal>
+      <Dependent Role="Addresses">
+        <PropertyRef Name="AddressType" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Addresses_ObjectTypes">
+    <End Role="ObjectTypes" Type="Thesis.Entities.Store.ObjectTypes" Multiplicity="0..1" />
+    <End Role="Addresses" Type="Thesis.Entities.Store.Addresses" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ObjectTypes">
+        <PropertyRef Name="ObjectTypeID" />
+      </Principal>
+      <Dependent Role="Addresses">
+        <PropertyRef Name="ObjectType" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Cities_Countries">
+    <End Role="Countries" Type="Thesis.Entities.Store.Countries" Multiplicity="1" />
+    <End Role="Cities" Type="Thesis.Entities.Store.Cities" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Countries">
+        <PropertyRef Name="CountryID" />
+      </Principal>
+      <Dependent Role="Cities">
+        <PropertyRef Name="CountryID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_LookupResources_Languages">
+    <End Role="Languages" Type="Thesis.Entities.Store.Languages" Multiplicity="1" />
+    <End Role="LookupResources" Type="Thesis.Entities.Store.LookupResources" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Languages">
+        <PropertyRef Name="LanguageId" />
+      </Principal>
+      <Dependent Role="LookupResources">
+        <PropertyRef Name="LanguageId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_LookupResources_Lookup">
+    <End Role="Lookup" Type="Thesis.Entities.Store.Lookup" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="LookupResources" Type="Thesis.Entities.Store.LookupResources" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Lookup">
+        <PropertyRef Name="LookupId" />
+      </Principal>
+      <Dependent Role="LookupResources">
+        <PropertyRef Name="LookupId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ModulesInRoles_aspnet_Roles">
+    <End Role="aspnet_Roles" Type="Thesis.Entities.Store.aspnet_Roles" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="ModulesInRoles" Type="Thesis.Entities.Store.ModulesInRoles" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="aspnet_Roles">
+        <PropertyRef Name="RoleId" />
+      </Principal>
+      <Dependent Role="ModulesInRoles">
+        <PropertyRef Name="RoleId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ModulesInRoles_Modules">
+    <End Role="Modules" Type="Thesis.Entities.Store.Modules" Multiplicity="1" />
+    <End Role="ModulesInRoles" Type="Thesis.Entities.Store.ModulesInRoles" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Modules">
+        <PropertyRef Name="ModuleId" />
+      </Principal>
+      <Dependent Role="ModulesInRoles">
+        <PropertyRef Name="ModuleId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_RelationInAddresses_Addresses">
+    <End Role="Addresses" Type="Thesis.Entities.Store.Addresses" Multiplicity="1" />
+    <End Role="RelationInAddresses" Type="Thesis.Entities.Store.RelationInAddresses" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Addresses">
+        <PropertyRef Name="AddressID" />
+      </Principal>
+      <Dependent Role="RelationInAddresses">
+        <PropertyRef Name="AddressID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_RelationInAddresses_Relations">
+    <End Role="Relations" Type="Thesis.Entities.Store.Relations" Multiplicity="1" />
+    <End Role="RelationInAddresses" Type="Thesis.Entities.Store.RelationInAddresses" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Relations">
+        <PropertyRef Name="RelationID" />
+      </Principal>
+      <Dependent Role="RelationInAddresses">
+        <PropertyRef Name="RelationID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_RolesInTree_aspnet_Roles">
+    <End Role="aspnet_Roles" Type="Thesis.Entities.Store.aspnet_Roles" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="RolesInTree" Type="Thesis.Entities.Store.RolesInTree" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="aspnet_Roles">
+        <PropertyRef Name="RoleId" />
+      </Principal>
+      <Dependent Role="RolesInTree">
+        <PropertyRef Name="RoleId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_RolesInTree_aspnet_Roles1">
+    <End Role="aspnet_Roles" Type="Thesis.Entities.Store.aspnet_Roles" Multiplicity="1" />
+    <End Role="RolesInTree" Type="Thesis.Entities.Store.RolesInTree" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="aspnet_Roles">
+        <PropertyRef Name="RoleId" />
+      </Principal>
+      <Dependent Role="RolesInTree">
+        <PropertyRef Name="ParentRoleId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

@@ -1,0 +1,43 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Web.Mvc;
+
+using Axiom.Lib.Controllers;
+using Settings;
+using Axiom.Lib.Attributes;
+using Axiom.Common.ViewModels;
+using Axiom.Lib.ActionResults;
+
+namespace Axiom.Areas.Settings.Controllers
+{
+    [ModuleAuthorize]
+    public class UserManagementController : BaseScenarios<UserManagementViewModel, IUserManagementRepository, Guid>
+    {
+        public UserManagementController(IUserManagementRepository repository)
+            : base(repository, "UserName", "UserId", Guid.Empty)
+        { }
+
+        [View]
+        [HttpGet]
+        public override ActionResult Detail(Guid? id)
+        {
+            return base.Detail(id);
+        }
+
+        [Save]
+        [HttpPost]
+        public override ActionResult Save(Guid? ID)
+        {
+            return base.Save(ID);
+        }
+
+        public ActionResult GetUsersByRoleId(GridPanelViewModel model, Guid roleId)
+        {
+            int totalCount;
+            var data = repository.GetUsersByRoleId(roleId, model, out totalCount);
+            return new GridPanelResult(data, totalCount, model);
+        }
+    }
+}
