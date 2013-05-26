@@ -90,11 +90,11 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Axiom.Authorization\Thesis.Authorization.csproj">
+    <ProjectReference Include="..\Thesis.Authorization\Thesis.Authorization.csproj">
       <Project>{DF554D01-FD5A-47FF-9702-95DC9AABB91F}</Project>
       <Name>Thesis.Authorization</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Axiom.Common\Thesis.Common.csproj">
+    <ProjectReference Include="..\Thesis.Common\Thesis.Common.csproj">
       <Project>{8EBCA540-3161-4FBA-B36C-B75ADD3D2BE6}</Project>
       <Name>Thesis.Common</Name>
     </ProjectReference>

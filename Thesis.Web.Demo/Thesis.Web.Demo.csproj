@@ -29,6 +29,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <ExcludeGeneratedDebugSymbol>false</ExcludeGeneratedDebugSymbol>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -192,22 +193,6 @@
       <Project>{DC208258-398B-4B3D-9E44-4A700DF1B23C}</Project>
       <Name>Activity</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Axiom.Authorization\Thesis.Authorization.csproj">
-      <Project>{DF554D01-FD5A-47FF-9702-95DC9AABB91F}</Project>
-      <Name>Thesis.Authorization</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Axiom.Common\Thesis.Common.csproj">
-      <Project>{8EBCA540-3161-4FBA-B36C-B75ADD3D2BE6}</Project>
-      <Name>Thesis.Common</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Axiom.Lib\Thesis.Lib.csproj">
-      <Project>{C6A1EC14-A605-427D-8505-3B00EB23582E}</Project>
-      <Name>Thesis.Lib</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Axiom.Web.UI\Thesis.Web.UI.csproj">
-      <Project>{F17BADAD-426E-4E7F-8993-3C3036876D1A}</Project>
-      <Name>Thesis.Web.UI</Name>
-    </ProjectReference>
     <ProjectReference Include="..\Crm\Crm.csproj">
       <Project>{29677976-CF05-4070-9FB2-EEAB3E285738}</Project>
       <Name>Crm</Name>
@@ -223,6 +208,22 @@
     <ProjectReference Include="..\Shell\Shell.csproj">
       <Project>{51E29F93-1761-4C73-8C36-FE573FB98165}</Project>
       <Name>Shell</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Thesis.Authorization\Thesis.Authorization.csproj">
+      <Project>{DF554D01-FD5A-47FF-9702-95DC9AABB91F}</Project>
+      <Name>Thesis.Authorization</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Thesis.Common\Thesis.Common.csproj">
+      <Project>{8EBCA540-3161-4FBA-B36C-B75ADD3D2BE6}</Project>
+      <Name>Thesis.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Thesis.Lib\Thesis.Lib.csproj">
+      <Project>{C6A1EC14-A605-427D-8505-3B00EB23582E}</Project>
+      <Name>Thesis.Lib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Thesis.Web.UI\Thesis.Web.UI.csproj">
+      <Project>{F17BADAD-426E-4E7F-8993-3C3036876D1A}</Project>
+      <Name>Thesis.Web.UI</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

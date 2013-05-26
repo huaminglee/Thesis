@@ -38,7 +38,7 @@
     </script>
 </head>
 <body>
-    <ext:ResourceManager ID="ResourceManager1" runat="server" />
+    <ext:ResourceManager ID="ResourceManager1" runat="server" ></ext:ResourceManager>
     
     <h1>Thesis by Emre Turan</h1>
     <h2>@<a href="http://www.bilgi.edu.tr/">Istanbul Bilgi University</a> and Computer Science Departmant</h2>

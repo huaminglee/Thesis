@@ -68,19 +68,19 @@
     <Compile Include="ViewModels\UserManagementViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Axiom.Authorization\Thesis.Authorization.csproj">
+    <ProjectReference Include="..\Thesis.Authorization\Thesis.Authorization.csproj">
       <Project>{DF554D01-FD5A-47FF-9702-95DC9AABB91F}</Project>
       <Name>Thesis.Authorization</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Axiom.Caching\Thesis.Caching.csproj">
+    <ProjectReference Include="..\Thesis.Caching\Thesis.Caching.csproj">
       <Project>{93DD1793-7499-4147-A7DB-C4732B3E1E16}</Project>
       <Name>Thesis.Caching</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Axiom.Common\Thesis.Common.csproj">
+    <ProjectReference Include="..\Thesis.Common\Thesis.Common.csproj">
       <Project>{8EBCA540-3161-4FBA-B36C-B75ADD3D2BE6}</Project>
       <Name>Thesis.Common</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Axiom.Entities\Thesis.Entities.csproj">
+    <ProjectReference Include="..\Thesis.Entities\Thesis.Entities.csproj">
       <Project>{FD881808-DE2E-49CA-ACC0-4B29EBB3953D}</Project>
       <Name>Thesis.Entities</Name>
     </ProjectReference>

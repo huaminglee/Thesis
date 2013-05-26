@@ -71,12 +71,6 @@
     <Compile Include="ViewModels\GridPanelViewModel.cs" />
     <Compile Include="ViewModels\ListItemViewModel.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Axiom.Resources\Thesis.Resources.csproj">
-      <Project>{27019289-4909-48EB-A3B8-33255A010B3A}</Project>
-      <Name>Thesis.Resources</Name>
-    </ProjectReference>
-  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
