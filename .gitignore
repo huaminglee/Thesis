@@ -11,3 +11,16 @@ Thesis.Lib/obj/
 Thesis.Resources/obj/
 Thesis.Web.UI/obj/
 Thesis.suo
+Activity/bin/
+Crm/bin/
+Ext.Net.MVC/bin/
+Settings/bin/
+Shell/bin/
+Thesis.Authorization/bin/
+Thesis.Caching/bin/
+Thesis.Common/bin/
+Thesis.Entities/bin/
+Thesis.Lib/bin/
+Thesis.Web.Demo/bin/
+Thesis.Web.Demo/obj/
+Thesis.Web.UI/bin/

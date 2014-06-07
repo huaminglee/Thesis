@@ -1,8 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2010
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Modules", "Modules", "{17998E6C-F20C-438C-B493-AA3423517A6A}"
-EndProject
+# Visual Web Developer Express 2010
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ext.Net.MVC", "Ext.Net.MVC\Ext.Net.MVC.csproj", "{62AAF3AF-4974-405E-B272-65697FC46E83}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Activity", "Activity\Activity.csproj", "{DC208258-398B-4B3D-9E44-4A700DF1B23C}"
@@ -30,55 +28,6 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Thesis.Web.Demo", "Thesis.Web.Demo\Thesis.Web.Demo.csproj", "{35763EA9-C102-4BC4-A8AC-E6288BDDC971}"
 EndProject
 Global
-	GlobalSection(TeamFoundationVersionControl) = preSolution
-		SccNumberOfProjects = 14
-		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
-		SccTeamFoundationServer = http://192.168.10.10:8080/
-		SccLocalPath0 = .
-		SccProjectUniqueName1 = Ext.Net.MVC\\Ext.Net.MVC.csproj
-		SccProjectName1 = Ext.Net.MVC
-		SccLocalPath1 = Ext.Net.MVC
-		SccProjectUniqueName2 = Axiom.Resources\\Axiom.Resources.csproj
-		SccProjectName2 = Axiom.Resources
-		SccLocalPath2 = Axiom.Resources
-		SccProjectUniqueName3 = Axiom.Common\\Axiom.Common.csproj
-		SccProjectName3 = Axiom.Common
-		SccLocalPath3 = Axiom.Common
-		SccProjectUniqueName4 = Axiom.Caching\\Axiom.Caching.csproj
-		SccProjectName4 = Axiom.Caching
-		SccLocalPath4 = Axiom.Caching
-		SccProjectUniqueName5 = Axiom.Authorization\\Axiom.Authorization.csproj
-		SccProjectName5 = Axiom.Authorization
-		SccLocalPath5 = Axiom.Authorization
-		SccProjectUniqueName6 = Axiom.Lib\\Axiom.Lib.csproj
-		SccProjectName6 = Axiom.Lib
-		SccLocalPath6 = Axiom.Lib
-		SccProjectUniqueName7 = Axiom.Web.UI\\Axiom.Web.UI.csproj
-		SccProjectName7 = Axiom.Web.UI
-		SccLocalPath7 = Axiom.Web.UI
-		SccProjectUniqueName8 = Axiom.Entities\\Axiom.Entities.csproj
-		SccProjectName8 = Axiom.Entities
-		SccLocalPath8 = Axiom.Entities
-		SccProjectUniqueName9 = Activity\\Activity.csproj
-		SccProjectTopLevelParentUniqueName9 = Axiom.sln
-		SccProjectName9 = Activity
-		SccLocalPath9 = Activity
-		SccProjectUniqueName10 = Crm\\Crm.csproj
-		SccProjectTopLevelParentUniqueName10 = Axiom.sln
-		SccProjectName10 = Crm
-		SccLocalPath10 = Crm
-		SccProjectUniqueName11 = Settings\\Settings.csproj
-		SccProjectTopLevelParentUniqueName11 = Axiom.sln
-		SccProjectName11 = Settings
-		SccLocalPath11 = Settings
-		SccProjectUniqueName12 = Shell\\Shell.csproj
-		SccProjectTopLevelParentUniqueName12 = Axiom.sln
-		SccProjectName12 = Shell
-		SccLocalPath12 = Shell
-		SccProjectUniqueName13 = Axiom\\Axiom.csproj
-		SccProjectName13 = Axiom
-		SccLocalPath13 = Axiom
-	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
@@ -139,6 +88,55 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 14
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://192.168.10.10:8080/
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = Ext.Net.MVC\\Ext.Net.MVC.csproj
+		SccProjectName1 = Ext.Net.MVC
+		SccLocalPath1 = Ext.Net.MVC
+		SccProjectUniqueName2 = Axiom.Resources\\Axiom.Resources.csproj
+		SccProjectName2 = Axiom.Resources
+		SccLocalPath2 = Axiom.Resources
+		SccProjectUniqueName3 = Axiom.Common\\Axiom.Common.csproj
+		SccProjectName3 = Axiom.Common
+		SccLocalPath3 = Axiom.Common
+		SccProjectUniqueName4 = Axiom.Caching\\Axiom.Caching.csproj
+		SccProjectName4 = Axiom.Caching
+		SccLocalPath4 = Axiom.Caching
+		SccProjectUniqueName5 = Axiom.Authorization\\Axiom.Authorization.csproj
+		SccProjectName5 = Axiom.Authorization
+		SccLocalPath5 = Axiom.Authorization
+		SccProjectUniqueName6 = Axiom.Lib\\Axiom.Lib.csproj
+		SccProjectName6 = Axiom.Lib
+		SccLocalPath6 = Axiom.Lib
+		SccProjectUniqueName7 = Axiom.Web.UI\\Axiom.Web.UI.csproj
+		SccProjectName7 = Axiom.Web.UI
+		SccLocalPath7 = Axiom.Web.UI
+		SccProjectUniqueName8 = Axiom.Entities\\Axiom.Entities.csproj
+		SccProjectName8 = Axiom.Entities
+		SccLocalPath8 = Axiom.Entities
+		SccProjectUniqueName9 = Activity\\Activity.csproj
+		SccProjectTopLevelParentUniqueName9 = Axiom.sln
+		SccProjectName9 = Activity
+		SccLocalPath9 = Activity
+		SccProjectUniqueName10 = Crm\\Crm.csproj
+		SccProjectTopLevelParentUniqueName10 = Axiom.sln
+		SccProjectName10 = Crm
+		SccLocalPath10 = Crm
+		SccProjectUniqueName11 = Settings\\Settings.csproj
+		SccProjectTopLevelParentUniqueName11 = Axiom.sln
+		SccProjectName11 = Settings
+		SccLocalPath11 = Settings
+		SccProjectUniqueName12 = Shell\\Shell.csproj
+		SccProjectTopLevelParentUniqueName12 = Axiom.sln
+		SccProjectName12 = Shell
+		SccLocalPath12 = Shell
+		SccProjectUniqueName13 = Axiom\\Axiom.csproj
+		SccProjectName13 = Axiom
+		SccLocalPath13 = Axiom
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{DC208258-398B-4B3D-9E44-4A700DF1B23C} = {17998E6C-F20C-438C-B493-AA3423517A6A}
