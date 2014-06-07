@@ -1,6 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<configuration>
-  <connectionStrings>
-    <add name="AxiomEntities" connectionString="metadata=res://*/Axiom2DataModel.csdl|res://*/Axiom2DataModel.ssdl|res://*/Axiom2DataModel.msl;provider=System.Data.SqlClient;provider connection string=&quot;Data Source=redbull;Initial Catalog=Axiom2;Persist Security Info=True;User ID=sa;Password=data1;MultipleActiveResultSets=True&quot;" providerName="System.Data.EntityClient" />
-  </connectionStrings>
-</configuration>
