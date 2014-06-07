@@ -32,10 +32,14 @@
     <IsWebBootstrapper>false</IsWebBootstrapper>
     <UseApplicationTrust>false</UseApplicationTrust>
     <BootstrapperEnabled>true</BootstrapperEnabled>
-    <SccProjectName>SAK</SccProjectName>
-    <SccLocalPath>SAK</SccLocalPath>
-    <SccAuxPath>SAK</SccAuxPath>
-    <SccProvider>SAK</SccProvider>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -99,9 +103,7 @@
     <Compile Include="Results\AjaxStoreResult.cs" />
     <Compile Include="Results\ControllerExtensions.cs" />
     <Compile Include="Results\HtmlHelperExtensions.cs" />
-    <Compile Include="Results\PartialViewPage.cs">
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
+    <Compile Include="Results\PartialViewPage.cs" />
     <Compile Include="Results\PartialViewRenderer.cs" />
     <Compile Include="Results\PartialViewResult.cs" />
     <Compile Include="Results\RestResult.cs" />
